@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeuPortifolio</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/eb0a0d6ff1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        
+      <div class="container">
+        <nav>
+<h5 id="gabi">GA</h5>
+<ul id="sidemenu">
+    <li><a href="#container">Inicio</a></li>
+    <li><a href="#about">Sobre mim</a></li>
+    <li><a href="#portfolio">Projetos</a></li>
+    <li><a href="#contact">Contato</a></li>
+    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+</ul>
+<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+        </nav>
+        <div class="header-text">
+            <h1><i class="fa-solid fa-laptop"></i><i class="fa-regular fa-heart"></i>Ola,me chamo Gabriel,Seja bem vindo!<i class="fa-solid fa-heart"><i class="fa-solid fa-desktop"></i></i></h1>
+        </div>
+      </div>  
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="imagens/WhatsApp Image 2025-04-20 at 21.46.23.jpeg" id="foto" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitulo">Sobre mim</h1>
+                    <p id="nome">Meu nome é Gabriel, sou estudante do Ensino Médio com formação técnica integrada em Logística. Além disso, estou cursando o técnico em Informática, ampliando meus conhecimentos na área de tecnologia. Aos sábados, também dedico parte do meu tempo ao curso de Operador de Computador, demonstrando meu comprometimento com o aprendizado e o desenvolvimento profissional.Sou uma pessoa responsável, dedicado e sempre busco dar o meu melhor em todas as atividades que realizo.</p>
+                    <div class="tab-titles">
+                        <p class="tap-links active-link" onclick="opentab('competências')">Competências </p>
+                        <p class="tap-links" onclick="opentab('tecnologias dominadas')">Tecnologias Aprendidas </p>
+                    </div>
+                    <div class="tab-contets active-tab" id=competências>
+                        <ul>
+                            <li><span>Trabalhar em equipe de forma colaborativa</span><br></li>
+                            <br>
+                            <li><span>Programação</span><br></li>
+                            <br>
+                            <li><span>Animação em Videos</span><br></li>
+                            <br>
+                            <li><span>Canva</span><br></li>
+                            <br>
+                            <li><span>Excel Basico</span><br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contets" id="tecnologias dominadas">
+                        <ul>
+                            <li><span>HTML</span><br></li>
+                            <br>
+                            <li><span>CSS</span><br></li>
+                            <br>
+                            <li><span>Photoshop</span><br></li>
+                            <br>
+                            <li><span>Ilustrator</span><br></li>
+                            <br>
+                            <li><span>Java</span><br></li>
+                            <br>
+                            <li><span>Banco de Dados</span><br></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <div id="portfolio">
+        <div class="container">
+                          <h1 class="subtitulo">Meus Projetos</h1>
+                          <div class="work-list">
+                            <div class="work">
+                                <img src="imagens/Captura de tela 2025-04-18 214003.png" alt="">
+                                <div class="layer">
+                                    <h3>Lista de Perfumes</h3>
+                                    <p>Um pequeno projeto usando o ArrayList,instanciar objetos</p>
+                                    <a href="https://github.com/GabrielAc2305/TrabalhoPerfumaria"><i class="fa-solid fa-link"></i></a>
+                                </div>
+                                
+                            </div>
+                            <div class="work">
+                                <img src="imagens/Captura de tela 2025-04-18 214503.png" alt="">
+                                         <div class="layer">
+                                            <h3>Meu portifolio</h3>
+                                            <p>Criação do meu primeiro  portifolio</p>
+                                         <a href="#"><i class="fa-solid fa-link"></i></a>
+                                         </div>
+                                
+                            </div>
+                          </div>
+        </div>
+       
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitulo">Entre em Contato</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>bielaccadrollifarias@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>51 9798-9712</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/GabrielAc2305"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/eu_gabriel_32/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/gabriel-accadrolli-farias-794443322/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                   
+                </div>
+                <div class="contact-right"></div>
+                <form>
+                    <input type="text" name="Nome" placeholder="Seu nome" required>
+                    <input type="text" name="Email" placeholder="Seu Email" required>
+                    <textarea name="Message"rows="6" placeholder="Sua Mensagem"></textarea>
+                    <button type="submit" class="bnt">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Feito por Gabriel  Accadrolli Farias <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tap-links");
+        var tabcontents = document.getElementsByClassName("tab-contets");
+
+        function opentab(tabname){
+            for(tablinks of tablinks){
+                tablinks.classList.remove("active-link");
+            }
+            for(tabcontents of tabcontents){
+                tabcontents.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        
+    </script>
+</body>
+</html>
